@@ -1,0 +1,11 @@
+<view class="content">
+	<scroll-view class = "scroll-content" scroll-y = "{{true}}" scroll-x = "{{flase}}" bindscrolltolower="bindDownLoad" bindscrolltoupper="topLoad"  bindscroll="scroll" style="height:{{scrollHeight}}px;">
+		<block wx:for="{{articleList}}">
+		<view class="article-item" id="{{item.id}}" bindtap="navToDetail">
+			<image src="{{item.imgUrl}}" class="img"></image>
+			<text class="title">{{item.title}}</text>
+			<text class="des">{{item.des}}</text>
+		</view>
+	</block>
+	</scroll-view>
+</view>

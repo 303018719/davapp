@@ -1,0 +1,135 @@
+page{
+    height: 100%
+}
+.content{
+    width: 100%;
+    height: 100%;
+}
+.scroll-content {
+    margin-top:110rpx;
+}
+/*搜索*/
+.fix-search {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height:110rpx;
+    background-color:#e94828;
+    z-index:2;
+    align-items:center;
+}
+.search-locationed {justify-content:space-between;}
+.search-locationed,.search-txt {
+    width:160rpx;
+    height:64rpx;
+    border-radius:32rpx;
+    background-color:#fff;
+    align-items:center;
+}
+.search-locationed .txt {
+    font-size:28rpx;
+}
+.search-txt {
+    position:relative;
+    margin-left:20rpx;
+    width:530rpx;
+}
+.search-txt image {
+    position:absolute;
+    left:20rpx;
+    top:50%;
+    margin-top:-15rpx;
+    width:30rpx;
+    height:30rpx;
+}
+.fix-search image, 
+.fix-search text
+{
+    display:block;
+}
+.fix-search .search-txt  text{
+    margin-left:44rpx;
+    width:450rpx;
+    height:64rpx;
+    line-height:64rpx;
+    font-size:28rpx;
+    color:#c8c8cc;
+}
+.search-locationed .icon-loc {
+    width:23rpx;
+    height:28rpx;
+}
+.search-locationed .icon-r {
+    width:10rpx;
+    height:18rpx;
+}
+/*图标导航*/
+.index-icon-nav {
+    text-align:center;
+}
+.index-icon-nav1 {
+    padding-top:48rpx;
+}
+.index-icon-nav2 {
+    padding-top:70rpx;
+    padding-bottom:48rpx;
+}
+.index-icon-nav .icon-nav-item{
+    flex:0 0 20%;
+}
+.index-icon-nav image {
+    display:block;
+    width:50rpx;
+    height:50rpx;
+    margin:0 auto 26rpx;
+}
+.index-icon-nav .icon-title {
+    font-size:24rpx;
+    line-height:1;
+}
+/*企业列表*/
+.index-qylist .title {
+    height:80rpx;
+    align-items:center;
+    border-top:2rpx solid #efeff4;
+}
+.index-qylist .title .item{
+    flex: 0 0 25%;
+    font-size:26rpx;
+    color:#969699;
+    text-align:center;
+}
+.index-qylist .title .item.active {color:#e94828;}
+.index-qylist .icon-filter {
+    width:24rpx;
+    height:24rpx;
+    margin-left:16rpx;
+}
+.index-brand-list .item {
+    height:160rpx;
+    align-items:center;
+    border-top:2rpx solid #efeff4;
+}
+.index-brand-list .img {
+    display:block;
+    margin-left:20rpx;
+    width:240rpx;
+    height:100rpx;
+    border:2rpx solid #e1e1e6;
+    border-radius:5rpx;
+}
+.index-brand-list text {
+    display:block;
+    width:300rpx;
+    margin:0 60rpx 0 40rpx;
+    font-size:30rpx;
+    line-height:44rpx;
+    height:88rpx;
+    overflow:hidden;
+}
+.index-brand-list .icon-arrow {
+    display:block;
+    width:19rpx;
+    height:32rpx;
+}

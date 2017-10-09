@@ -1,0 +1,11 @@
+<view  class = "content">
+    <scroll-view scroll-x = "{{false}}" scroll-y = "{{true}}">
+        <image class="img" src="{{imgUrl}}"></image>
+        <view class="header">
+            <view class="title"><text>{{title}}</text></view>
+            <view class="mess"><text class="editor">编辑:{{editor}}</text><text>来源:{{form}}</text></view>
+            <view class="date"><text>{{date}}</text></view>
+        </view>
+        <view class="article-detail"><text>{{articleDetail}}</text></view>
+    </scroll-view>
+</view>

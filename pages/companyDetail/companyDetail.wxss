@@ -1,0 +1,148 @@
+.content{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.brand-info {
+    height:314rpx;
+    padding:70rpx 20rpx 0;
+    background:#e94828;
+}
+.brand-info .name {
+    margin-top:44rpx;
+    font-size:32rpx;
+    color:#fff;
+    text-align:center;
+}
+.brand-image {
+    display:block;
+    margin:0 auto;
+    width:240rpx;
+    height:100rpx;
+    border:2rpx solid #efeff4;
+    border-radius:8rpx;
+    background:#fff;
+}
+.item {
+    position:relative;
+    padding:30rpx 40rpx;
+    font-size:32rpx;
+    border-top:2rpx solid #efeff4;
+}
+.integral-title {
+    display:block;
+    width:560rpx;
+    margin-left:70rpx;
+    line-height:100rpx;
+}
+.integral-image {
+    position:absolute;
+    left:40rpx;
+    top:50%;
+}
+.tel {
+    border-top:none;
+}
+.mail .integral-image {
+    width:42rpx;
+    height:26rpx;
+    margin-top:-13rpx;
+}
+.website .integral-image {
+    width:42rpx;
+    height:42rpx;
+    margin-top:-21rpx;
+}
+.tel .integral-image {
+    width:42rpx;
+    height:40rpx;
+    margin-top:-20rpx;
+}
+.loc .integral-image {
+    width:43rpx;
+    height:40rpx;
+    margin-top:-20rpx;
+}
+.icon-arrow {
+    position:absolute;
+    right:40rpx;
+    top:50%;
+    margin-top:-16rpx;
+    width:20rpx;
+    height:32rpx;
+}
+.desc-title {
+    position:relative;
+    height:80rpx;
+    border-bottom:2px solid #efeff4;
+}
+.desc-title .integral-image {
+    width:32rpx;
+    height:34rpx;
+    top:50%;
+    left:40rpx;
+    margin-top:-17rpx;
+}
+.desc-title .title {
+    display:block;
+    margin-left:110rpx;
+    line-height:80rpx;
+    font-size:32rpx;
+}
+.fixed-view {
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:0 48rpx;
+    height:134rpx;
+    box-sizing:border-box;
+    border-top:2rpx solid #efeff4;
+    background:#fff;
+    align-items:center;
+    justify-content:space-between;
+}
+.desc {
+    margin-bottom:134rpx;
+    padding:30rpx 40rpx;
+    font-size:28rpx;
+    line-height:2;
+    color:#808080;
+}
+.btn-collect,.btn-share {
+    position:relative;
+    width:90rpx;
+    height:90rpx;
+    background:#f0f0f2;
+    border-radius:50%;
+}
+.btn-collect  image {
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:40rpx;
+    height:38rpx;
+    margin-top:-19rpx;
+    margin-left:-20rpx;
+}
+.btn-share image {
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:36rpx;
+    height:36rpx;
+    margin-top:-18rpx;
+    margin-left:-18rpx;
+}
+.btn-call {
+    width:420rpx;
+    height:90rpx;
+    margin:0;
+    padding:0;
+    line-height:90rpx;
+    text-align:center;
+    font-size:32rpx;
+    color:#fff;
+    background:#e94828;
+    border-radius:45rpx;
+}

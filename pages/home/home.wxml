@@ -1,0 +1,53 @@
+<view class = "content">
+    <view class="fix-search content-padded flex">
+                <view class="search-locationed flex content-padded" bindtap="changeLoca">
+                    <image class="icon-loc" src="../resource/icon_locationb.png"></image>
+                    <text class="txt">{{nowLocation}}</text>
+                    <image class="icon-r" src="../resource/icon_rightS.png"></image>
+                </view>
+                <form class="search-txt content-padded" bindtap="changeLoca">
+                    <image src="../resource/icon_search.png"></image>
+                    <text>{{searchTxt}}</text>
+                </form>
+    </view>
+    <scroll-view class = "scroll-content" scroll-y = "{{true}}" scroll-x = "{{flase}}">
+        <!--图标导航-->
+        <view class="index-icon-nav flex index-icon-nav1">
+            <view class="icon-nav-item" wx:for="{{navList}}" wx:if="{{index < 5}}" bindtap="iconNavto" id="{{index}}">
+            	<image src="{{item.picture_url}}" class = "icon-img"></image>
+              <text class = "icon-title">{{item.title}}</text>
+            </view>
+        </view>
+        <view class="index-icon-nav flex index-icon-nav2">
+            <view class="icon-nav-item" wx:for="{{navList}}" wx:if="{{index > 4}}" bindtap="iconNavto" id="{{index}}">
+            	<image src="{{item.picture_url}}" class = "icon-img"></image>
+              <text class = "icon-title">{{item.title}}</text>
+            </view>
+        </view>
+        <view style = "width:100%;background-color:#efeff4;height:20rpx;"></view>
+        <!--企业列表-->
+        <view class="index-qylist">
+        	<view class="title flex" id="dav-title">
+        		<view bindtap="indexTab" id="brand-recommend" class="{{currentId=='brand-recommend'?'active item':'item'}}">
+        			<text>推荐品牌</text>
+        		</view>
+        		<view bindtap="indexTab" id="brand-hot" class="{{currentId=='brand-hot'?'active item':'item'}}">
+        			<text>热门品牌</text>
+        		</view>
+        		<view bindtap="indexTab" id="brand-nearby" class="{{currentId=='brand-nearby'?'active item':'item'}}">
+        			<text>在我附近</text>
+        		</view>
+        		<view class="item">
+        			<text>筛选</text><image class="icon-filter" src="../resource/icon_filter.png"></image>
+        		</view>
+        	</view>
+        </view>
+        <view class="index-brand-list">
+        	<view class="item flex content-padded" bindtap="indexQyDetail" wx:for="{{brandList}}">
+        		<image class="img" src="{{item.imgUrl}}"></image>
+        		<text>{{item.title}}</text>
+        		<image class="icon-arrow" src="../resource/icon_rightL.png"></image>
+        	</view>
+        </view>
+    </scroll-view>
+</view>

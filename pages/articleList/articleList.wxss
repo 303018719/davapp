@@ -1,0 +1,23 @@
+.content{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.article-item {
+  padding:40rpx;
+  border-bottom:2rpx solid #efeff4;
+}
+.article-item .img {width:100%; display:block;}
+.article-item .title {
+  display:block;
+  padding-top:20rpx;
+  line-height:56rpx;
+  font-size:32rpx;
+}
+.article-item .des {
+  line-height:1.6;
+  font-size:22rpx;
+  color:#afafb3;
+}

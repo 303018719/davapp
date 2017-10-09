@@ -1,0 +1,28 @@
+<view class = "content flex">
+	       
+         <form bindsubmit="formSubmit">
+         	<view class="fixed-search flex content-padded">
+             <view class="input"><image src="../resource/icon_search.png"></image><input placeholder="请输入城市" placeholder-style="color:#c8c8cc" type="text" name="searchTxt"></input></view>
+             <button class="btn" form-type="submit">搜索</button>
+             </view>
+         </form>
+         <view class="loc-content">
+         <view class="now-location flex">
+         	<view class="txt"><text>当前城市：</text></view>
+         	<view class="list clearfix"><text>{{location}}</text></view>
+         </view>
+         <view class="hot-city flex">
+         	<view class="txt"><text>热门城市：</text></view>
+         	<view class="list clearfix">
+         		<block wx:for="{{hotCity}}"><text>{{item}}</text></block>
+         	</view>
+         </view>
+         </view>
+         <view class="re-location" bindtap="locaiton">
+         	<text>重新定位</text>
+         	<image src="../resource/icon_reloc.png"></image>
+         </view>
+</view>
+
+
+

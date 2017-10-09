@@ -1,0 +1,40 @@
+<view class = "content">
+    <view class="fix-search content-padded flex">
+                <view class="search-locationed flex content-padded">
+                    <image class="icon-loc" src="../resource/icon_locationb.png"></image>
+                    <text class="txt">{{nowLocation}}</text>
+                    <image class="icon-r" src="../resource/icon_rightS.png"></image>
+                </view>
+                <view class="search-txt flex content-padded">
+                    <image src="../resource/icon_search.png"></image>
+                    <input placeholder="上海三思|DET德浩|台达丽讯" placeholder-style="color:#c8c8cc;" type="text"></input>
+                </view>
+    </view>
+    <scroll-view class = "scroll-content" scroll-y = "{{true}}" scroll-x = "{{flase}}">
+        <view style = "width:100%;background-color:#efeff4;height:20rpx;"></view>
+        <!--企业列表-->
+        <view class="index-qylist">
+            <view class="title flex" bindtap="indexTab">
+                <view class="item">
+                    <text>推荐品牌</text>
+                </view>
+                <view class="item">
+                    <text>热门品牌</text>
+                </view>
+                <view class="item">
+                    <text>在我附近</text>
+                </view>
+                <view class="item">
+                    <text>筛选</text><image class="icon-filter" src="../resource/icon_filter.png"></image>
+                </view>
+            </view>
+        </view>
+        <view class="index-brand-list">
+            <view class="item flex content-padded" bindtap="indexQyDetail" wx:for="{{recommendQy}}">
+                <image class="img" src="{{item.imgUrl}}"></image>
+                <text>{{item.title}}</text>
+                <image class="icon-arrow" src="../resource/icon_rightL.png"></image>
+            </view>
+        </view>
+    </scroll-view>
+</view>

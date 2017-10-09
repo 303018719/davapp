@@ -1,0 +1,39 @@
+<view  class="content">
+    <scroll-view scroll-x="{{false}}" scroll-y="{{true}}">
+        <view class ="brand-info">
+            <image src="{{imgUrl}}" class="brand-image">
+            </image>
+            <view class="name"><text>{{brandName}}</text></view>
+        </view>
+        <view class = "item tel">
+            <image src="../resource/icon_tel.png" class = "integral-image"></image>
+            <text class = "integral-title">{{tel}}</text>
+        </view>
+        <view class = "item mail">
+            <image src="../resource/icon_mail.png" class = "integral-image"></image>
+            <text class = "integral-title">{{mail}}</text>
+        </view>
+        <view class = "item website">
+            <image src="../resource/icon_website.png" class = "integral-image"></image>
+            <text class = "integral-title">{{website}}</text>
+        </view>
+        <view class = "item loc">
+            <image src="../resource/icon_loc.png" class = "integral-image"></image>
+            <text class = "integral-title">{{address}}</text>
+            <image src="../resource/icon_rightL.png" class="icon-arrow"></image>
+        </view>
+        <view style = "background-color:#efeff4;height:20rpx;width:100%"></view>
+        <view class = "desc-title">
+            <image src="../resource/icon_info.png" class = "integral-image"></image>
+            <text class = "title">公司介绍</text>
+        </view>
+        <view class="desc">
+            <text class="desc-txt">{{desc}}</text>
+        </view>
+    </scroll-view>
+    <view class="fixed-view flex">
+        <view class="btn-collect"><image src="{{collected =='true'?'../resource/icon_favSelect.png':'../resource/icon_favNormal.png'}}" bindtap="{{collected =='true'? reduceCompanyFromF : addCompanyToF}}"></image></view>
+        <view class="btn-share"><image src="../resource/icon_shareNormal.png"></image></view>
+        <button bindtap="calling" class="btn-call"><text class="call-txt">拨打电话</text></button>
+    </view>
+</view>

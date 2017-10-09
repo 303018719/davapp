@@ -1,0 +1,32 @@
+.content{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.img {
+    width:750rpx;
+}
+.header {
+    padding:40rpx;
+    border-bottom: 2px solid #efeff4;
+}
+.title {
+    margin-bottom:16rpx;
+    line-height:56rpx;
+    font-size:40rpx;
+}
+.mess,.date {
+    line-height:38rpx;
+    font-size:22rpx;
+    color:#808080;
+}
+.article-detail {
+    padding:40rpx;
+}
+.article-detail text {
+    line-height:52rpx;
+    font-size:30rpx;
+}
+.editor {
+    margin-right:24rpx;
+}

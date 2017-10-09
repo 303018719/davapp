@@ -1,0 +1,22 @@
+<view class = "content">
+    <scroll-view scroll-y="{{true}}" scroll-x="{{false}}">
+        <view class ="user-info">
+            <image src="{{avatarUrl}}" class="user-image">
+            </image>
+            <view class="name"><text class="nickname">{{nickName}}</text></view>
+            <view class="location"><image class="icon-loc" src="../resource/icon_location.png"></image><text>{{province}}，</text><text>{{city}}</text><image class="icon-arrow" src="../resource/icon_rightSw.png"></image></view>
+        </view>
+
+        <view class="title">
+            <text>我的收藏</text>
+        </view>
+        <view class="index-brand-list">
+            <view class="item flex content-padded" bindtap="indexQyDetail" wx:for="{{brandList}}">
+                <image class="img" src="{{item.imgUrl}}"></image>
+                <text>{{item.title}}</text>
+                <image class="icon-arrow" src="../resource/icon_rightL.png"></image>
+            </view>
+        </view>
+    </scroll-view>
+</view>
+

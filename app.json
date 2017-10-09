@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/search/search",
+    "pages/category/category",
+    "pages/companyDetail/companyDetail",
+    "pages/me/me",
+    "pages/login/login",
+    "pages/articleDetail/articleDetail",
+    "pages/articleList/articleList",
+    "pages/result/result"   
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#e94828",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#c8c8cc",
+    "selectedColor": "#e94828",
+    "backgroundColor": "f7f7fa",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "pages/resource/homeNormal.png",
+      "selectedIconPath": "pages/resource/homeSelect.png"
+    },{
+      "pagePath": "pages/articleList/articleList",
+      "text": "文章精选",
+      "iconPath": "pages/resource/articleListNormal.png",
+      "selectedIconPath": "pages/resource/articleListSelect.png"
+    },{
+      "pagePath": "pages/me/me",
+      "text": "我的账户",
+      "iconPath": "pages/resource/meNoraml.png",
+      "selectedIconPath": "pages/resource/meSelect.png"
+    }]
+  }
+}

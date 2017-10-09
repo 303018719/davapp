@@ -1,0 +1,46 @@
+@import "../home/home.wxss"
+.user-info {
+	height:420rpx;
+	padding-top:40rpx;
+	box-sizing:border-box;
+	background:#e94828;
+}
+.user-image {
+	display:block;
+	margin:0 auto;
+	width:180rpx;
+	height:180rpx;
+	border-radius:50%;
+}
+.name {
+	margin:40rpx 0 26rpx;
+	text-align:center;
+}
+.nickname {
+	color:#fff;
+	font-size:32rpx;
+}
+.location {
+	color:#fff;
+	font-size:24rpx;
+	text-align:center;
+}
+.icon-loc {
+	width:23rpx;
+	height:28rpx;
+	margin-right:20rpx;
+}
+.icon-arrow {
+	width:10rpx;
+	height:16rpx;
+	margin-left:20rpx;
+}
+.title {
+	padding:0 40rpx;
+	height:80rpx;
+	line-height:80rpx;
+	color:#7d7d80;
+}
+.title text {
+	font-size:28rpx;
+}
